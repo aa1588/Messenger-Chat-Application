@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    com.chatapp: INFO
+    org.springframework.security: WARN
+    org.hibernate.SQL: WARN
+    org.testcontainers: WARN
+    com.github.dockerjava: WARN
+
+chatapp:
+  jwtSecret: testSecretKey
+  jwtExpirationMs: 86400000
